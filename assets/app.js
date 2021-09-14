@@ -464,6 +464,9 @@ function startGame() {
 
 function startFunc() {
   if (isGameStarted === true || isGameEnded === true) return;
+  document.querySelectorAll('.white').forEach((item) => {
+    item.classList.remove('closed')
+  })
   isGameStarted = true;
 }
 
